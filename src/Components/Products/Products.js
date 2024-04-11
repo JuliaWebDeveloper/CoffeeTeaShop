@@ -16,7 +16,7 @@ function Products() {
                   if(selectedCategory === 'Все') return true;
                   return selectedCategory === product.category;
                 })
-                .map(product => <ProductItem product={product}/>)}
+                .map(product => <ProductItem key={product.id} product={product}/>)}
             </div>
         </div>
     )
